@@ -1,0 +1,21 @@
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.box{
+    position: absolute;
+    width: 16rem;
+    height: 10rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -5rem;
+    margin-left: -8rem;
+    text-align: center;
+    border: 5px solid #8569bc;
+    border-radius: 5px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
