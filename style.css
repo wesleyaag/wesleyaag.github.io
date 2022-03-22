@@ -1,21 +1,39 @@
-body{
-    background-color: #333;
-    color: #fff;
+header, main, footer {
+    padding-left: 300px;
 }
 
-.box{
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+.side {
+    background-color: #6374D6;
+    width: 300px;
+    height: 100%;
     position: absolute;
-    width: 16rem;
-    height: 10rem;
-    top: 50%;
-    left: 50%;
-    margin-top: -5rem;
-    margin-left: -8rem;
-    text-align: center;
-    border: 5px solid #8569bc;
-    border-radius: 5px;
+    top: 0%;
+    left: 0%;
+    z-index: -2;
 }
 
-.box:hover{
-    cursor: pointer;
+.language {
+    margin-left: 1rem;
+}
+
+.links {
+    margin-top: 10rem;
+}
+
+.links li {
+    margin-top: 2.5rem;
+}
+
+.fundo_1 img{
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    left: -10%;
+    top: -30px;
 }
