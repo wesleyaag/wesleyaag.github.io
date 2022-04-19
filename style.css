@@ -10,6 +10,7 @@ h1 {
 main {
     margin-left: 20%;
     font-family: Roboto Slab, serif;
+    line-height: 2rem;
 }
 
 /*Side bar*/
@@ -99,8 +100,7 @@ h4 {
 
 /*Apresentação*/
 .apresentacao {
-    padding-left: 2rem;
-    padding-top: 2rem;
+    padding: 2rem;
     font-size: 2rem;
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
@@ -188,21 +188,32 @@ h4 {
 
 .contato_grid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     gap: 5rem;
     padding: 1rem;
     margin-bottom: 5rem;
 }
 
 .contato_item{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
+    transition: 0.2s;
+}
+
+.contato_item:hover{
+    transition:0.3s;
+    transform: scale(110%);
 }
 
 .contato_item img{
     width: 8rem;
     height: 8rem;
+}
+.contato_item a{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color:#222;
 }
 
 .item2{
@@ -225,4 +236,9 @@ footer{
     background: linear-gradient(89.83deg, #6374D6 3.04%, rgba(173, 0, 255, 0.5) 96.24%);
     height:10rem;
     width: auto;
+}
+
+footer h4{
+    color: #ffffff;
+    text-align: center;
 }
