@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="PTBR">
 
 <head>
     <title>Hello World!</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script defer src= "app.js"></script>
 </head>
 
 <body>
@@ -22,7 +25,7 @@
         <h1><a href="#home" class="name">Wesley Alexandre</a></h1>
 
         <ul class="links">
-            <li><a href="#apresentacao">Presentation</a></li>
+            <li><a href="#apresentacao">About me</a></li>
             <li><a href="#projetos">Projects</a></li>
             <li><a href="#contato">Contact</a></li>
         </ul>
@@ -32,44 +35,47 @@
             <div class="parallax_bg">
                 <h1>Hello!</h1>
                 <h1>My name is Wesley</h1>
-                <h4>I am studying to be a developer</h4>
+                <h4>I'm studying to be a developer</h4>
             </div>
         </section>
 
         <section class="apresentacao" id="apresentacao">
             <h1>About me</h1>
-            <div class="perfil">
-                <img src="./img/perfil.jpg" alt="um cara muito lindo">
+            <div class="perfil hidden">
+                <img src="./img/perfil2.jpg" alt="a handsome guy">
             </div>
 
-            <div class="frases">
-                Me chamo Wesley Alexandre, sou estudante do 9º período de Sistemas de Informação pela Universidade
+            <div class="frases hidden">
+                My name is Wesley Alexandre, i'm graduated in information systems from the Universidade
                 Federal de Itajubá -
                 <a href="https://unifei.edu.br/" target="blank">UNIFEI</a><br><br>
-                Atualmente estou estudando para ser um desenvolvedor web, tanto <i>frontend</i> quanto <i>backend</i>,
-                mas me interesso por várias áreas da
-                tecnologia: IA, Arquitetura de Software, Desenvolvimento Mobile, Desenvolvimento de Games.
+
+                <div class="frases hidden">
+                    I'm a introverted guy, but i can easily learn new things and work in a team.
+                    I rather listen to people, so i can understand better the situation and help in their objectives.
+                </div><br>
+
+                <div>Currently i am studying to be a frontend developer, 
+                    but i also interested in several areas of tecnology like
+                    Artificial Inteligence, Mobile Development and Game Development.                    
+                </div>
             </div>
 
-            <div class="img_container">
+            <div class="img_container hidden">
                 <img src="./img/robot.png">
                 <img src="./img/smartphone.png">
                 <img src="./img/console.png">
             </div>
 
-            <div class="frases">
-                Sou uma pessoa introvertida, com facilidade para aprender e para trabalhar em equipe, prefiro ouvir as
-                pessoas para
-                melhor entender a situação e poder ajudá-las em nossos objetivos.
-            </div>
-            <div class="frases">
-                Algumas de minhas habilidades técnicas são:
+            <div class="frases hidden">
+                <div class = "quebra"></div>
+                <div>Some of my technical skills are:</div>
                 <ul>
-                    <li><b>Linguagens de programação:</b> C(intermediário), Java(intermediário), C#(básico), JavaScript(básico) e iniciando em python</li>
-                    <li><b>Desenvolvimento Web:</b> HTML, CSS, React e iniciando com VUE.js</li>
-                    <li><b>Banco de dados:</b> PostgreSQL(básico), MongoDB(básico) e interesse em GraphQL</li>
-                    <li><b>Ferramentas:</b> Lucidchart, Figma, GIMP, GIT, Kanban/Trello</li>
-                    <li><b>Inglês intermediário</li>
+                    <li><b>Programing languages:</b> C, Java, JavaScript and Python (Intermediate); C# (Basic)</li>
+                    <li><b>Web development:</b> HTML, CSS, Node and React</li>
+                    <li><b>Databases:</b> PostgreSQL, MongoDB and starting with GraphQL</li>
+                    <li><b>Tools:</b> GIT, Kanban/Trello</li>
+                    <li><b>English</b> Intermediate (120h - Amplera)</li>
                 </ul>
             </div>
 
@@ -77,18 +83,20 @@
 
         <section class = "meio">
             <div class="parallax_md">
+                <h4>"You mustn't let mistakes weigh you down. Acknowledge them and take what you've learned to move on"</h4>
+                <h4>Full Frontal - Mobile Suit Gundam</h4>
             </div>
         </section>
 
         <section class="projetos" id="projetos">
-            <h1>Projetos</h1>
+            <h1>Projects</h1>
             <div class="carroussel_container">
-                <h1>Em construção</h1>
+                <h1>Under Construction</h1>
             </div>
         </section>
 
-        <section class = "contato" id="contato">
-            <h1>Onde me encontrar</h1>
+        <section class = "contato hidden" id="contato">
+            <h1>Where to find me</h1>
             <div class="contato_container">
                 <div class="contato_item">
                     <a href="mailto: wesleyaag@hotmail.com"><img src="./img/email.png"> <h3>Email:</h3></a>
@@ -105,7 +113,7 @@
         </section>
 
         <footer>
-            <h4>Fotos e ícones: Veja as fontes no repositório do GitHub</h4>
+            <h4>Photos and Icons: Sources in GitHub</h4>
         </footer>
         
     </main>

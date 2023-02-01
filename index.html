@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="PTBR">
 
 <head>
     <title>Hello World!</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script defer src= "app.js"></script>
 </head>
 
 <body>
@@ -38,39 +41,42 @@
 
         <section class="apresentacao" id="apresentacao">
             <h1>Sobre mim</h1>
-            <div class="perfil">
-                <img src="./img/perfil.jpg" alt="um cara muito lindo">
+            <div class="perfil hidden">
+                <img src="./img/perfil2.jpg" alt="um cara muito bonito">
             </div>
 
-            <div class="frases">
-                Me chamo Wesley Alexandre, sou estudante do 10º período de Sistemas de Informação pela Universidade
+            <div class="frases hidden">
+                Me chamo Wesley Alexandre, sou formado em Sistemas de Informação pela Universidade
                 Federal de Itajubá -
                 <a href="https://unifei.edu.br/" target="blank">UNIFEI</a><br><br>
-                <div class = "quebra">Atualmente estou estudando para ser um desenvolvedor web, tanto <i>frontend</i> quanto <i>backend</i>,
+
+                <div class="frases hidden">
+                    Sou uma pessoa introvertida, com facilidade para aprender e para trabalhar em equipe, prefiro ouvir as
+                    pessoas para
+                    melhor entender a situação e poder ajudá-las em seus objetivos.
+                </div><br>
+
+                <div>Atualmente estou estudando para ser um desenvolvedor <i>frontend</i>,
                 mas me interesso por várias áreas da
-                tecnologia: IA, Arquitetura de Software, Desenvolvimento Mobile, Desenvolvimento de Games.
+                tecnologia como Inteligência Artificial, Desenvolvimento Mobile e Desenvolvimento de Games.
                 </div>
             </div>
 
-            <div class="img_container">
+            <div class="img_container hidden">
                 <img src="./img/robot.png">
                 <img src="./img/smartphone.png">
                 <img src="./img/console.png">
             </div>
 
-            <div class="frases">
-                Sou uma pessoa introvertida, com facilidade para aprender e para trabalhar em equipe, prefiro ouvir as
-                pessoas para
-                melhor entender a situação e poder ajudá-las em nossos objetivos.
-            </div>
-            <div class="frases">
-                <div class = "quebra">Algumas de minhas habilidades técnicas são:</div>
+            <div class="frases hidden">
+                <div class = "quebra"></div>
+                <div>Algumas de minhas habilidades técnicas são:</div>
                 <ul>
-                    <li><b>Linguagens de programação:</b> C(intermediário), Java(intermediário), C#(básico), JavaScript(básico) e iniciando em python</li>
-                    <li><b>Desenvolvimento Web:</b> HTML, CSS, React e iniciando com VUE.js</li>
-                    <li><b>Banco de dados:</b> PostgreSQL(básico), MongoDB(básico) e interesse em GraphQL</li>
-                    <li><b>Ferramentas:</b> Lucidchart, Figma, GIMP, GIT, Kanban/Trello</li>
-                    <li><b>Inglês intermediário</li>
+                    <li><b>Linguagens de programação:</b> C, Java, JavaScript e Python (Intermediário); C# (básico)</li>
+                    <li><b>Desenvolvimento Web:</b> HTML, CSS, Node  e React</li>
+                    <li><b>Banco de dados:</b> PostgreSQL, MongoDB e interesse em GraphQL</li>
+                    <li><b>Ferramentas:</b> GIT, Kanban/Trello</li>
+                    <li><b>Inglês intermediário (120h - Amplera)</li>
                 </ul>
             </div>
 
@@ -78,6 +84,8 @@
 
         <section class = "meio">
             <div class="parallax_md">
+                <h4>"You mustn't let mistakes weigh you down. Acknowledge them and take what you've learned to move on"</h4>
+                <h4>Full Frontal - Mobile Suit Gundam</h4>
             </div>
         </section>
 
@@ -88,7 +96,7 @@
             </div>
         </section>
 
-        <section class = "contato" id="contato">
+        <section class = "contato hidden" id="contato">
             <h1>Onde me encontrar</h1>
             <div class="contato_container">
                 <div class="contato_item">
